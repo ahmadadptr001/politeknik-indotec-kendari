@@ -79,8 +79,8 @@ export default function CampusUpdates({
   agenda = sampleAgenda,
 }) {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-6 mt-4">
-      <div className="flex flex-col items-center gap-30">
+    <section className="max-w-7xl mx-auto px-4 py-6 my-4">
+      <div className="flex flex-col items-center gap-20">
         <div className="lg:flex-1">
           <h2 className="text-2xl font-semibold">
             <span className="text-yellow-500">Berita</span> Terkini
@@ -95,9 +95,14 @@ export default function CampusUpdates({
               ))}
             </div>
           </div>
+          <div className="flex justify-end mt-2">
+            <a href="#" className="btn btn-accent mt-2">
+              Lihat Berita Lainnya <i className="fa fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <div className="relative w-full lg:w-120 border border-gray-200 shadow-md/20 p-4 rounded-md">
+        <div className="relative w-full lg:w-120 border border-gray-200 shadow-md/20 p-4 rounded-md overflow-hidden">
           <i className="fa fa-calendar-day text-primary/13 absolute -right-1 bottom-1 text-[12rem] rotate-[-25deg]"></i>
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-xl font-semibold ">Agenda</h3>
