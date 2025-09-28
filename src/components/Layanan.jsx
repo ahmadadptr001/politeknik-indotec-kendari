@@ -25,29 +25,24 @@ const layananList = [
     icon: "fa-users",
     url: "#",
   },
-  {
-    title: "BADAN LAYANAN UMUM",
-    desc: "",
-    icon: "fa-building",
-    url: "#",
-  },
+  { title: "BADAN LAYANAN UMUM", desc: "", icon: "fa-building", url: "#" },
 ];
 
 export default function Layanan() {
   return (
-    <section className="relative h-screen mt-16">
+    <section className="relative w-full min-h-[90vh] mt-16">
       <img
         src={layananImage}
         alt=""
-        className="absolute w-full h-screen object-cover inset-0"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/40 via-gray-900/60 to-blue-600/50 z-5"></div>
-      <div className="absolute inset-0 z-10 p-6 flex flex-col items-center text-white">
-        <p className="font-bold text-4xl md:text-5xl text-center mb-8 tracking-wide">
+      <div className="relative z-10 px-4 py-20 md:py-32 flex flex-col items-center text-white">
+        <p className="font-bold text-4xl md:text-5xl text-center mb-12 tracking-wide">
           Layanan
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-7xl mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-7xl">
           {layananList.map((item, idx) => (
             <a
               key={idx}
@@ -55,13 +50,13 @@ export default function Layanan() {
               className="group relative flex flex-col items-center text-center p-6 bg-white/10 backdrop-blur-md rounded-xl shadow-lg hover:scale-105 hover:bg-white/20 transition-transform duration-300"
             >
               <i
-                className={`fa ${item.icon} text-6xl mb-4 text-yellow-400 group-hover:text-white transition-colors duration-300`}
+                className={`fa ${item.icon} text-5xl sm:text-6xl mb-4 text-yellow-400 group-hover:text-white transition-colors duration-300`}
               ></i>
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 {item.title}
               </h3>
               {item.desc && (
-                <p className="text-sm md:text-base text-white/80 group-hover:text-white transition-colors duration-300">
+                <p className="text-xs sm:text-sm md:text-base text-white/80 group-hover:text-white transition-colors duration-300">
                   {item.desc}
                 </p>
               )}
