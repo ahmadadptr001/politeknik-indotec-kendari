@@ -35,7 +35,7 @@ export default function Layanan() {
         src={layananImage}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
-      />
+      /> 
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/40 via-gray-900/60 to-blue-600/50 z-5"></div>
       <div className="relative z-10 px-4 py-20 md:py-32 flex flex-col items-center text-white">
         <p className="font-bold text-4xl md:text-5xl text-center mb-12 tracking-wide">
