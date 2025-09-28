@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import gambarhero1 from "../assets/gambar-hero-1.jpg";
-import gambarhero2 from "../assets/gambar-hero-2.jpg";
-import gambarhero3 from "../assets/gambar-hero-3.jpg";
-import gambarhero4 from "../assets/gambar-hero-4.jpg";
+import gambarhero1 from "../assets/gambar-hero-1.png";
+import gambarhero2 from "../assets/gambar-hero-2.png";
+import gambarhero3 from "../assets/gambar-hero-3.png";
+import gambarhero4 from "../assets/gambar-hero-4.png";
 
 const DEFAULT_ITEMS = [
   {
