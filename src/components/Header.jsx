@@ -107,6 +107,7 @@ export default function Header() {
       name: "LAYANAN",
       path: "#",
       children: [
+        {name: "SIAKAD", path: "/layanan/siakad"},
         {
           name: "Badan Layanan Umum",
           path: "#",
